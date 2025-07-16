@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Formulario - Mi Web</title>
+  <title>Explorando el Universo - Telescopio Vera Rubin</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
-<body>
+<body  class="bg-dark text-light">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Mi Web</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="index.html">Vera Rubin</a>
+         <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+      
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -36,89 +38,106 @@
   <!-- Formulario -->
   <main class="container my-5">
     <h2>Formulario de contacto</h2>
-    <form id="formulario" novalidate>
-  <div class="row">
-    <div class="mb-3 col-12 col-md-6">
-      <label for="nombre" class="form-label">Nombre</label>
-      <input
-        type="text"
-        class="form-control"
-        id="nombre"
-        name="nombre"
-        required
-        autocomplete="off"
-      />
-      <div class="invalid-feedback"></div>
-    </div>
+    <form class="bg-white p-4 rounded shadow mx-auto mt-5 text-dark" style="max-width: 500px;" id="formulario" novalidate>
+      <div class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            required
+            autocomplete="off"
+          />
+          <div class="invalid-feedback"></div>
+        </div>
 
-    <div class="mb-3 col-12 col-md-6">
-      <label for="apellido" class="form-label">Apellido</label>
-      <input
-        type="text"
-        class="form-control"
-        id="apellido"
-        name="apellido"
-        required
-        autocomplete="off"
-      />
-      <div class="invalid-feedback"></div>
-    </div>
-  </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellido"
+            name="apellido"
+            required
+            autocomplete="off"
+          />
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="mb-3 col-12 col-md-6">
-      <label for="rut" class="form-label">RUT</label>
-      <input
-        type="text"
-        class="form-control"
-        id="rut"
-        name="rut"
-        required
-        autocomplete="off"
-      />
-      <div class="invalid-feedback"></div>
-    </div>
+      <div class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <label for="rut" class="form-label">RUT</label>
+          <input
+            type="text"
+            class="form-control"
+            id="rut"
+            name="rut"
+            required
+            autocomplete="off"
+          />
+          <div class="invalid-feedback"></div>
+        </div>
 
-    <div class="mb-3 col-12 col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        required
-        autocomplete="off"
-      />
-      <div class="invalid-feedback"></div>
-    </div>
-  </div>
+        <div class="mb-3 col-12 col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+            autocomplete="off"
+          />
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
 
-  <div class="row">
-    <div class="mb-3 col-12 col-md-6">
-      <label for="telefono" class="form-label">Teléfono</label>
-      <input
-        type="text"
-        class="form-control"
-        id="telefono"
-        name="telefono"
-        required
-        autocomplete="off"
-      />
-      <div class="invalid-feedback"></div>
-    </div>
-  </div>
+      <div class="row">
+        <div class="mb-3 col-12 col-md-6">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input
+            type="text"
+            class="form-control"
+            id="telefono"
+            name="telefono"
+            required
+            autocomplete="off"
+          />
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
 
-  <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-light text-center py-3">
-    <div class="container">
-      <small>&copy; 2025 Mi Web - Ingeniería en Informática</small>
-    </div>
-  </footer>
+    <footer class="text-center py-3 border-top border-secondary" style="background-color: #212529;">
+      <div class="footer-container text-light">
+        <small>&copy; 2025 Explorando el universo - Telescopio Vera Rubin</small>
+        <ul class="footer-links">
+                <li><a class="link" href="https://github.com/crisdev06" target="_blank" rel="noreferrer"> <!-- 1. icono redes sociales -->
+                        <img class="logo" src="img/icons/github.png" alt="Logo github">
+                    </a>
+                </li>
+
+                <li><a class="link" href="https://www.linkedin.com" target="_blank"> <!-- 2. icono redes sociales -->
+                        <img class="logo" src="img/icons/linkedin.png" alt="Logo linkedin">
+                    </a>
+                </li>
+                <li><a class="link" href="https://portal.inacap.cl" target="_blank"> <!-- 3. icono redes sociales -->
+                        <img class="logo" src="img/icons/inacap.png" alt="Logo inacap">
+                    </a>
+                </li>
+
+            </ul>
+      </div>
+    </footer>
+
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/formulario.js"></script>

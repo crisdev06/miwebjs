@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    min-height:  100dvh;
+    grid-template-rows: auto 1fr auto;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 350px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: transparent;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.2;
+    z-index: -1;
+    animation: starMovement 100s linear infinite;
+  }
+
+  @keyframes starMovement {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-25%, -25%);
+    }
+  }

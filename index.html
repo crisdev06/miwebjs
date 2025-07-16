@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi Web - Inicio</title>
+    <title>Explorando el Universo - Telescopio Vera Rubin</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
 </head>
-<body class="container">
+<body  class="bg-dark text-light">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Mi Web</a>
+        <a class="navbar-brand" href="index.html">Vera Rubin</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -22,11 +25,12 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
+
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="formulario.html">Formulario</a>
+              <a class="nav-link" href="formulario.html">Trabaja con nosotros</a>
             </li>
           </ul>
         </div>
@@ -35,14 +39,84 @@
 
     <!-- Contenido principal -->
     <main class="container my-5">
-      <h1>Bienvenido a Mi Web</h1>
-      <p>Esta es la página principal.</p>
+      <header class="text-center py-5">
+        <h1>Explorando el Universo</h1>
+        <p class="lead">Descubre los misterios del cosmos con el Telescopio Vera Rubin</p>
+      </header>
+      <!-- Informacion de la pagina -->
+      <section class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="img/3523_observatorio-vera-rubin.jpg" alt="Telescopio Vera Rubin" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-6">
+            <h2>¿Qué es el Telescopio Vera Rubin?</h2>
+            <p>
+              El Telescopio Vera C. Rubin, anteriormente conocido como LSST (Large Synoptic Survey Telescope), es uno de los proyectos astronómicos más ambiciosos del siglo XXI. Ubicado en el Cerro Pachón, Chile, está diseñado para capturar imágenes de gran parte del cielo nocturno cada pocas noches, permitiendo estudiar el universo dinámico en detalle.
+            </p>
+            <p>
+              Con su cámara de 3.2 gigapíxeles —la más grande jamás construida— permitirá investigar materia oscura, energía oscura, asteroides, supernovas, y mucho más.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Imagenes -->
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Imágenes obtenidas</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img src="img/23HS-rubin-firstlook-vid-67154-cover-verticalTwoByThree735.jpg" alt="Galaxia espiral" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-4">
+            <img src="img/23HS-rubin-firstlook-01-bvfq-mediumSquareAt3X.jpg" alt="Nebulosa colorida" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-4">
+            <img src="img/nsf-doe-rubin-virgo-cluster-2-im3crop2-20250624020215927.jpg" alt="Campo profundo del universo" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+      </section>
+      <section class="container my-5">
+        <h2 class="text-center mb-4">¿Quieres formar parte del equipo?</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p>
+              El Telescopio Vera Rubin está en busca de profesionales apasionados por la astronomía, la ingeniería y la ciencia de datos. Si te interesa explorar el universo y formar parte de uno de los proyectos astronómicos más ambiciosos del mundo, ¡te estamos buscando!
+            </p>
+            <ul>
+              <li>Astrofísicos y astrónomos con experiencia en observación del cielo profundo.</li>
+              <li>Ingenieros electrónicos, ópticos o en computación para operación y mantenimiento del telescopio.</li>
+              <li>Analistas de datos y desarrolladores con interés en Big Data y Machine Learning aplicado a la astronomía.</li>
+              <li>Profesionales con experiencia en divulgación científica y educación astronómica.</li>
+            </ul>
+            <div class="text-center mt-4">
+              <a href="formulario.html" class="btn btn-outline-light btn-lg">Postula Aquí</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-3">
-      <div class="container">
-        <small>&copy; 2025 Mi Web - Ingeniería en Informática</small>
+    <footer class="text-center py-3 border-top border-secondary" style="background-color: #212529;">
+      <div class="footer-container text-light">
+        <small>&copy; 2025 Explorando el universo - Telescopio Vera Rubin</small>
+        <ul class="footer-links">
+                <li><a class="link" href="https://github.com/crisdev06" target="_blank" rel="noreferrer"> <!-- 1. icono redes sociales -->
+                        <img class="logo" src="img/icons/github.png" alt="Logo github">
+                    </a>
+                </li>
+
+                <li><a class="link" href="https://www.linkedin.com" target="_blank"> <!-- 2. icono redes sociales -->
+                        <img class="logo" src="img/icons/linkedin.png" alt="Logo linkedin">
+                    </a>
+                </li>
+                <li><a class="link" href="https://portal.inacap.cl" target="_blank"> <!-- 3. icono redes sociales -->
+                        <img class="logo" src="img/icons/inacap.png" alt="Logo inacap">
+                    </a>
+                </li>
+
+            </ul>
       </div>
     </footer>
 

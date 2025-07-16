@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function validarCampo(campo) {
     const valor = campo.input.value;
     const esValido = campo.validar(valor);
-    const feedback = campo.input.nextElementSibling; // div.invalid-feedback
+    const feedback = campo.input.nextElementSibling; 
 
     if (valor === "") {
       campo.input.classList.remove("is-valid", "is-invalid");
